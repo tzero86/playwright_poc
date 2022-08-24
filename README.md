@@ -13,10 +13,11 @@ At the moment it includes the following:
 - Pytest INI Settings for easy CLI arguments management
 - Python 3.10 and pytest-playwright usage (synchronous mode for now)
 - Page Object Model template
-- Exporting results in HTML
+- Exporting results in HTML Including screenshots on failure
+- Ability to turn Test Execution Video Recording ON/OFF/ONFAILURE from pytest.ini (On-failure by default)
 
 **Planned Additions**:
-  - Add ability to turn Test Execution Recording ON/OFF
+  
   - Add example usage of Playwright Fixtures & Pytest annotations
   - Explore easy triggers for multi-browser execution
 
@@ -34,7 +35,7 @@ Next install pytest:
 Next install the HTML reporter:
 `pip install pytest-html-reporter`
 
-FAnd finally install playwright:
+And finally install playwright:
 `playwright install`
 
 And run the sample tests with:

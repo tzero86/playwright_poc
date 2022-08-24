@@ -18,7 +18,7 @@ def test_pom_class(browser):
     home = HomePage(browser)
     home.visit()
     attach(data=home.page.screenshot(type='png'))
-    assert home.page.inner_text('h1') == '''UI Test Automation'''
+    assert home.home_tag_line.inner_text() == '''UI Test Automation'''
 
 
 

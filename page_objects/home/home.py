@@ -13,8 +13,6 @@ class HomePage:
 
     # METHODS:
     #   we add methods to our class, these are typically actions you can do on that page
-    def get_tag_line(self):
-        return self.page.inner_text(self.home_tag_line)
-
     def visit(self):
         self.page.goto('http://uitestingplayground.com/')
+
