@@ -31,13 +31,16 @@ Install pytest-playwright:
 Next install pytest:
 `pip install pytest`
 
+Next install the HTML reporter:
+`pip install pytest-html-reporter`
+
 FAnd finally install playwright:
 `playwright install`
 
 And run the sample tests with:
 `pytest`
 
-
+NOTE: I'll add a requirements file for easy dependency install later on.
 
 I hope this might help someone.
 
