@@ -1,5 +1,5 @@
 import pytest
-from playwright.sync_api import Page
+from pytest_html_reporter import attach
 from page_objects.home.home import HomePage
 
 
@@ -9,6 +9,7 @@ def test_sample_page(page):
     assert page.inner_text('h1') == '''UI Test Automation
 Playground'''
     page.click("text=Dynamic ID")
+    attach(data=page.screenshot(type='png'))
     assert page.inner_text('h3') == 'Dynamic ID'
 
 
@@ -16,7 +17,9 @@ Playground'''
 def test_pom_class(browser):
     home = HomePage(browser)
     home.visit()
-    home.page.wait_for_timeout(5000)
+    attach(data=home.page.screenshot(type='png'))
+    assert home.page.inner_text('h1') == '''UI Test Automation'''
+
 
 
 
