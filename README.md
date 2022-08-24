@@ -14,7 +14,7 @@ At the moment it includes the following:
 - Python 3.10 and pytest-playwright usage (synchronous mode for now)
 - Page Object Model template
 - Exporting results in HTML Including screenshots on failure
-- Ability to turn Test Execution Video Recording ON/OFF/ONFAILURE from pytest.ini (On-failure by default)
+- Ability to turn Test Execution Video Recording (on, off, or retain-on-failure) from pytest.ini (retain-on-failure by default)
 
 **Planned Additions**:
   
