@@ -13,9 +13,9 @@ At the moment it includes the following:
 - Pytest INI Settings for easy CLI arguments management
 - Python 3.10 and pytest-playwright usage (synchronous mode for now)
 - Page Object Model template
+- Exporting results in HTML
 
 **Planned Additions**:
-  - Exporting results in HTML (simple HTML and Allure Reports)
   - Add ability to turn Test Execution Recording ON/OFF
   - Add example usage of Playwright Fixtures & Pytest annotations
   - Explore easy triggers for multi-browser execution
