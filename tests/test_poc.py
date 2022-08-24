@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import Page
-from pages.home_page import HomePage
+from page_objects.home.home import HomePage
 
 
 # a sample test directly interacting with the elements right inside the test itself
@@ -16,7 +16,7 @@ Playground'''
 def test_pom_class(browser, page):
     home = HomePage(browser)
     home.visit()
-    page.wait_for_timeout(5000)
+    home.page.wait_for_timeout(5000)
 
 
 
