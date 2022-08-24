@@ -21,6 +21,23 @@ At the moment it includes the following:
   - Explore easy triggers for multi-browser execution
 
 
+## Usage
+
+Simply clone the repo and make sure you have the following packages installed:
+
+Install pytest-playwright:
+`pip install pytest-playwright`
+
+Next install pytest:
+`pip install pytest`
+
+FAnd finally install playwright:
+`playwright install`
+
+And run the sample tests with:
+`pytest`
+
+
 
 I hope this might help someone.
 

@@ -13,7 +13,7 @@ Playground'''
 
 
 # a simple test consuming the logic and locators defined in the page object file
-def test_pom_class(browser, page):
+def test_pom_class(browser):
     home = HomePage(browser)
     home.visit()
     home.page.wait_for_timeout(5000)
