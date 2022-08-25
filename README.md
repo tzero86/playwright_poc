@@ -1,6 +1,6 @@
 # PlayItRight POC
 
-Exploring Playwright with python these days, so I thought I'll create a repo 
+I'm exploring Playwright with Python these days, so I thought I'll create a repo 
 to help anyone interested to get started with Playwright Python Automated Testing a bit quicker.
 
 This is just a bare-bones template with some minimal examples and functionalities, you can quickly get started and build on top of it to make it meet your needs.
@@ -24,6 +24,13 @@ At the moment it includes the following:
 
 ## Usage
 
+### PIP Dependency Install
+
+Install all requirements with just one line: `pip install -r requirements.txt`
+Then just install Playwright: `playwright install`
+
+
+### Manual Dependency Install
 Simply clone the repo and make sure you have the following packages installed:
 
 Install pytest-playwright:
@@ -38,7 +45,10 @@ Next install the HTML reporter:
 And finally install playwright:
 `playwright install`
 
-And run the sample tests with:
+
+### How to run the tests
+
+Run the sample tests with:
 `pytest`
 
 NOTE: I'll add a requirements file for easy dependency install later on.
