@@ -21,6 +21,14 @@ def test_pom_class(browser):
     assert home.home_tag_line.inner_text() == '''UI Test Automation'''
 
 
+# Run the test once, it'll create the base snapshot of the page (snapshots folder)
+# then uncomment the line after home.visit() to see the test results from
+# the pixelmatch comparison of the two images (snapshot_test_failures folder)
+def test_visual_home_page(browser, assert_snapshot):
+    home = HomePage(browser)
+    home.visit()
+    # home.page.click("text=Dynamic ID")
+    assert_snapshot(home.page.screenshot())
 
 
 

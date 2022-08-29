@@ -15,6 +15,7 @@ At the moment it includes the following:
 - Page Object Model template
 - Exporting results in HTML Including screenshots on failure
 - Ability to turn Test Execution Video Recording (on, off, or retain-on-failure) from pytest.ini (retain-on-failure by default)
+- Added visual testing support and example test case (PixelMatch comparisons and diff generation).
 
 **Planned Additions**:
   
@@ -41,6 +42,9 @@ Next install pytest:
 
 Next install the HTML reporter:
 `pip install pytest-html-reporter`
+
+Next install pytest-playwright-visual for visual testing:
+`pip install pytest-playwright-visual`
 
 And finally install playwright:
 `playwright install`
