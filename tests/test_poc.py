@@ -29,6 +29,7 @@ def test_visual_home_page(browser, assert_snapshot):
     home.visit()
     # home.page.click("text=Dynamic ID")
     assert_snapshot(home.page.screenshot())
+    # Snapshots can be updated by running pytest --update-snapshots
 
 
 
