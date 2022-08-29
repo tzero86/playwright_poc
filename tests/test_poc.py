@@ -29,8 +29,8 @@ def test_visual_home_page(browser, assert_snapshot):
     home.visit()
     # home.page.click("text=Dynamic ID")
     assert_snapshot(home.page.screenshot(mask=[
-        # you can mask any dynamic elements that could make the test fail
-        # for example the username or image slider if it's present
+        # you can mask any dynamic elements that could make the test fail (will show up purple in snapshots)
+        # for example the username or image slider if it's present so those are ignored in the comparison process
         # this accepts a list of elements, ideally defined already in the page object
         # e.g. home.home_tag_line
     ]))
