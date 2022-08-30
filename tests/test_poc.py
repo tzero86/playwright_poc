@@ -32,7 +32,7 @@ def test_visual_home_page(browser, assert_snapshot):
         # you can mask any dynamic elements that could make the test fail (will show up purple in snapshots)
         # for example the username or image slider if it's present so those are ignored in the comparison process
         # this accepts a list of elements, ideally defined already in the page object
-        # e.g. home.home_tag_line
+        home.home_rubik_cube
     ]))
     # Snapshots can be updated by running pytest --update-snapshots
 
